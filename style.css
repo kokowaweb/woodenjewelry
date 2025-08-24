@@ -1,0 +1,132 @@
+@charset "UTF-8";
+body {
+  font-family: "Crimson Text", serif;
+  font-weight: 400;
+  font-style: normal;
+  color: #2d2d2d;
+  margin: 5%;
+}
+
+h2 {
+  font-size: 24px;
+  margin: 1rem 0 1rem 2rem;
+}
+h3,
+.txt {
+  font-size: 16px;
+  margin: 1rem 0 1rem 2rem;
+}
+img {
+  max-width: 100%;
+}
+
+/*---ヘッダー---------------*/
+#mainvisual {
+  width: 90vw;
+  margin-bottom: 2rem;
+}
+#header .flex {
+  display: flex;
+  width: 90vw;
+}
+#header .logo {
+  width: 110px;
+  margin-right: 2rem;
+}
+#header nav a {
+  font-size: 14px;
+  margin: 0 1rem;
+  text-decoration: none;
+  color: #2d2d2d;
+}
+
+/*---concept----------------*/
+#concept {
+  display: flex;
+  max-width: 1000px;
+  margin: 2rem 0;
+}
+
+/*---work------------------*/
+#work {
+  display: flex;
+  max-width: 1000px;
+  margin: 2rem 0;
+}
+
+/*---セクション共通-------------*/
+.txt {
+  line-height: 1.5;
+}
+.sec-img {
+  width: 50%;
+  object-fit: cover;
+}
+.sec-about {
+  width: 50%;
+  align-content: center;
+  margin: 0 4rem 0 2rem;
+}
+
+/*---フッター---------------*/
+#footer {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1000px;
+  margin-top: 4rem;
+}
+
+#footer .logo {
+  width: 110px;
+}
+
+/*---SP-----------------------------------------------------------*/
+@media screen and (max-width: 767px) {
+  body {
+    margin: 0;
+  }
+  h2 {
+    font-size: 20px;
+    margin: 1rem 0;
+  }
+  h3 {
+    margin: 1rem 0;
+  }
+  .txt {
+    margin: 2rem 0;
+  }
+
+  #mainvisual {
+    width: 100%;
+    margin-bottom: 0;
+  }
+  #header .flex {
+    width: 100%;
+    margin: 18px 0 50px 1rem;
+    display: flex;
+    justify-content: flex-start;
+  }
+  #concept {
+    flex-direction: column;
+    margin: 2rem 2.5%;
+  }
+  #work {
+    flex-direction: column-reverse;
+    margin: 2rem 2.5%;
+  }
+  .sec-img,
+  .sec-about {
+    width: auto;
+  }
+  .sec-img {
+    margin-bottom: 10px;
+  }
+  .sec-about {
+    margin: 0;
+    padding: 0;
+  }
+  #footer {
+    width: auto;
+    margin: 4rem 2.5% 2rem;
+  }
+}
